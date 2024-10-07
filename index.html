@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance Management System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Management System</h1>
+
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Enter Student Name" required>
+            <select id="attendanceStatus">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button id="markAttendanceBtn">Mark Attendance</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by name">
+        </div>
+
+        <div class="attendance-list">
+            <h2>Attendance Records</h2>
+            <ul id="attendanceRecords"></ul>
+        </div>
+
+        <div class="footer-actions">
+            <button id="resetBtn">🗑️ Reset Records</button>
+            <button id="exportBtn">📄 Export as CSV</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
